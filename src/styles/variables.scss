@@ -1,0 +1,97 @@
+// sidebar
+$menuText: #e6e6e6;
+$menuActiveText: #e6e6e6;
+$menuActiveBg: #2d8cf0;
+$subMenuActiveText: #e6e6e6; //https://github.com/ElemeFE/element/issues/12951
+$subMenuActiveBg: #2d8cf0;
+
+$menuBg: #2c2d2d;
+$menuHover: #282828;
+
+$subMenuBg: #2c2d2d;
+$subMenuHover: #282828;
+
+$sideBarWidth: 240px;
+$headerHeight: 56px;
+$menuFontSize: 16px;
+$subMenuFontSize: 16px;
+$border: 1px solid #ebeef5;
+$boxShadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+
+// stylelint-disable
+:export {
+  menutext: $menuText;
+  menuactivetext: $menuActiveText;
+  submenuactivetext: $subMenuActiveText;
+  menubg: $menuBg;
+  menuhover: $menuHover;
+  submenubg: $subMenuBg;
+  submenuhover: $subMenuHover;
+  sidebarwidth: $sideBarWidth;
+  menufontsize: $menuFontSize;
+  headerheight: $headerHeight;
+}
+
+// color
+$theme-color: #2d8cf0;
+$theme-hover-color: #2e3850;
+
+$danger-btn-text-color: #ff5f5f;
+
+$primary-color: #2d8cf0;
+$success-color: #19be6b;
+$warning-color: #ff9900;
+$danger-color: #ed4014;
+$disabled-color: #c5c8ce;
+$info-color: #a7a7ab;
+$icon-color: #808695;
+$border-color: #e4e6f1;
+$devider-color: #e8eaec;
+
+$main-bg: #f6f6f6;
+$white: #fff;
+
+// font
+$title-color: #464c5b;
+$text-color: #5f6266;
+$helper-text-color: #9ea7b4;
+$text-disabled-color: #c3cbd6;
+$link-color: #3399ff;
+$text-2xl: 20px;
+$text-xl: 18px;
+$text-lg: 16px;
+$text-md: 14px;
+$text-sm: 12px;
+$font-family: 'Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, 微软雅黑, Arial, sans-serif';
+
+// padding
+
+$padding: 12px;
+
+// shadow
+
+$shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12),
+  0 5px 12px 4px rgba(0, 0, 0, 0.09);
+$shadow-sm: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+$shadow-md: 0 0px 6px 0 #000;
+$shadow-lg: 0 1px 14px 0 #000;
+
+// width
+
+$menu-width: 200px;
+
+// height
+
+$form-item-height: 32px;
+$form-group-height: 14px;
+$form-padding: 24px;
+$dialog-header-height: 50px;
+
+// width
+
+$menu-width: 200px;
+$subtree-width: 160px;
+
+// dialog

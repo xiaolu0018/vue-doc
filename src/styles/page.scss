@@ -1,0 +1,35 @@
+// Page Header
+.page-container {
+  // border: 20px solid #f1f2f6;
+  & >.header {
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: 16px;
+    box-shadow: $boxShadow;
+  }
+}
+.page-container-header {
+  .header-content {
+    min-width: 650px;
+  }
+}
+.page-container-footer {
+  width: 100%;
+}
+
+.its-serch-with-radio {
+  margin-bottom: -18px;
+  font-size: 0;
+  line-height: 28px;
+  & >.its-serch-radiobox {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 18px;
+    vertical-align: top;
+  }
+  & >.el-form--inline {
+    display: inline-block;
+    margin-bottom: 0 !important;
+    vertical-align: top;
+  }
+}

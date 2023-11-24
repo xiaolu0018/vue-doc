@@ -1,0 +1,261 @@
+// cover some element-ui styles
+
+.v-modal {
+  opacity: 0.7;
+}
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type='file'] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  position: relative;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 0;
+  transform: none;
+}
+.el-dialog__header {
+  height: $dialog-header-height;
+  padding: 0 $padding;
+  line-height: $dialog-header-height;
+  border-bottom: 1px solid #e4e7ed;
+}
+.el-dialog__title {
+  font-size: $text-lg;
+  font-weight: bold;
+}
+.el-dialog__headerbtn {
+  top: 14px;
+}
+.el-dialog__body {
+  max-height: 600px;
+  padding: 20px;
+  overflow-y: auto;
+}
+.el-dialog__footer {
+  padding: 10px 20px 11px;
+  border-top: 1px solid #e4e7ed;
+}
+
+.el-table tr th {
+  background-color: #fafafa;
+}
+.el-table__fixed-right {
+  height: 100% !important;
+}
+
+.el-input__inner {
+  border-radius: 2px;
+}
+.el-input-group__append {
+  border-radius: 2px;
+}
+.el-textarea__inner {
+  border-radius: 2px;
+}
+
+.el-button,
+.el-button--mini,
+.el-button--small {
+  border-radius: 2px;
+}
+
+.el-tabs {
+  background-color: #fff;
+}
+.el-tabs__header,
+.el-tabs__content {
+  padding: 0 $padding;
+}
+.el-tabs__nav-wrap::after {
+  background-color: #f2f6fc;
+}
+
+.el-form-item__label {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+.el-dropdown-menu__item {
+  padding: 5px 20px !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-drawer__header {
+  padding: 18px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e4e7ed;
+}
+.el-drawer__body {
+  padding: 20px;
+}
+.its-el-tabs {
+  .el-tabs__header {
+    margin: 0;
+  }
+  .el-tabs__content {
+    height: calc(100% - 65px);
+    padding: 30px 20px;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+}
+.icon-text-btn {
+  margin-right: 5px;
+}
+
+// $tabbleBackGroundColor: #5f5fff, #009eff, #00ffbc;
+// @each $color in $tabbleBackGroundColor {
+//   $i: index($tabbleBackGroundColor, $color)-1;
+//   .el-table__body tr.el-table__row--#{$i} {
+//     &:hover {
+//       td {
+//         background-color: mix($color, #fff, 1%);
+//       }
+//     }
+//     td {
+//       background-color: mix($color, #fff, 3%);
+//     }
+//   }
+// }
+.its-table-tag {
+  display: inline-block;
+  min-width: 4em;
+  padding: 6px 8px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  box-sizing: content-box;
+  transition: 0.2s width;
+}
+.its-detail-view-box {
+  position: relative;
+  .its-detail-btn-group {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}
+.el-scrollbar__bar {
+  opacity: 1;
+}
+.el-del-btn {
+  color: #f56c6c;
+}
+.el-button.is-disabled.el-button--text {
+  opacity: 0.5;
+}
+.el-drawer__body .container .header {
+  margin: 10px 0 !important;
+}
+.el-drawer__body .container .main,
+.el-dialog__body .container .main {
+  background: #fff !important;
+}
+.el-tree-node__content {
+  height: 32px;
+  line-height: 32px;
+}
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  color: $title-color;
+  background-color: #e8eaed;
+  box-shadow: 2px 0 8px 0 rgb(29 35 41 / 5%);
+}
+
+.g6-component-contextmenu {
+  position: absolute;
+  left: -150px;
+  padding: 10px 8px;
+  font-size: 12px;
+  color: #545454;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+}
+.g6-component-contextmenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-type: none;
+}
+.g6-component-contextmenu li {
+  margin-left: 0;
+  list-style: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+.g6-component-contextmenu li:hover {
+  background-color: #fafafa;
+}
+
+.el-table th.el-table__cell {
+  background-color: $main-bg;
+}
+
+.el-table::before,
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+  height: 0;
+}
+
+.el-table .cell {
+  line-height: 30px;
+  & > .el-button + .el-button {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  & > .el-button:nth-child(2) {
+    margin-left: 10px;
+  }
+  .action--more__btn {
+    font-size: 12px;
+    color: #409eff;
+    cursor: pointer;
+  }
+}
+
+.el-tooltip__popper {
+  max-width: 1024px;
+  max-height: 400px;
+  overflow-y: auto;
+}

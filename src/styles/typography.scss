@@ -1,0 +1,23 @@
+h1 {
+  font-size: $text-lg;
+  font-weight: bold;
+  color: $title-color;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: $text-md;
+  font-weight: bold;
+  color: $title-color;
+}
+
+p {
+  font-size: $text-md;
+  color: $text-color;
+}
+small {
+  font-size: $text-sm;
+  color: $helper-text-color;
+}

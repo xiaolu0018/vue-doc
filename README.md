@@ -1,24 +1,22 @@
 # vue-doc
 
-## Project setup
+## 文档自动生成工具
+
+### styleguide配置文件,styleguide.config.js
+
+
+### watch模式，开发环境，说明文档页面
 ```
-yarn install
+yarn run styleguide
 ```
 
-### Compiles and hot-reloads for development
+### 打包生成说明文档页面
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+yarn run styleguide:build
 ```
 
-### Lints and fixes files
+### // docgen生成md格式说明文档
 ```
-yarn lint
+yarn run doc
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
